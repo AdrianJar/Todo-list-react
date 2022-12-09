@@ -12,7 +12,7 @@ This is a *To Do List* project.
 
 ## 🎮Demo
 
-You can find a demo version of this project [link here](https://adrianjar.github.io/todo-list-react/).
+You can find a demo version of this project [link here](https://adrianjar.github.io/todo_list_react_v2/).
 
 ## 📖Description 
 
