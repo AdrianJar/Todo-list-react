@@ -1,4 +1,4 @@
-import styled, { css, ThemeConsumer } from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
     display: flex;
