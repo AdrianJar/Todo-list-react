@@ -2,24 +2,23 @@ import styled, { css } from "styled-components";
 
 export const SectionDiv = styled.section`
     max-width: 750px;
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white};
     margin: auto;
     margin-bottom: 20px;
     display: grid;
 `;
 
 export const Header = styled.header`
-    border-bottom: 2px solid #eeeeee;
     padding-left: 20px;
     margin: 0;
+    border-bottom: 2px solid ${({ theme }) => theme.color.gallery};
 
     ${({ display }) => display && css`
         display: grid;
         grid-template-columns: 1fr auto auto;
         grid-gap: 20px;
-        border-bottom: 2px solid #eeeeee;
 
-        @media (max-width: 767px) {
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
