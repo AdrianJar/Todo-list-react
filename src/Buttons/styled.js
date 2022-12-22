@@ -1,10 +1,10 @@
-import styled, { css } from "styled-components";
+import styled, { css, ThemeConsumer } from "styled-components";
 
 export const StyledDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -14,22 +14,22 @@ export const StyledDiv = styled.div`
 export const StyledButton = styled.button`
     border: none;
     padding: 15px;
-    background-color: white;
-    color: teal;
+    background-color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.teal};
     font-size: 15px;
     transition: 0.5s;
     cursor: pointer;
 
     &:hover{
-        color: hsl(180, 100%, 35%);
+        filter:brightness(120%);
     }
 
     ${({ disabled }) => disabled && css`
-        color: #ddd;
+        color: ${({ theme }) => theme.color.alto};
         cursor: default;
 
         &:hover{
-            color: #ddd;
+            filter: brightness(100%);
         }
     `}
 `;
