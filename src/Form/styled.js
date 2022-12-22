@@ -6,34 +6,34 @@ export const FormDiv = styled.form`
     grid-gap: 20px;
     padding: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid ${({ theme }) => theme.color.silver};
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 100%;
     }
 `;
 
 export const Button = styled.button`
     padding: 10px;
-    background-color: hsl(180, 100%, 25%);
+    background-color: ${({ theme }) => theme.color.teal};
     color: white;
     cursor: pointer;
     transition: 1s;
     border: none;
 
-    @media (max-width: 767px){
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
         width: 100%;
     }
 
     &:hover{
-        background-color: hsl(180, 100%, 35%);
+        filter: brightness(140%);
         transform: scale(1.05);
     }
 `;
