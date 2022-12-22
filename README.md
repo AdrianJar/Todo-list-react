@@ -44,6 +44,9 @@ This web APP is a part of my Frontend Dev course in which I participate.
 - Markdown
 - Node.js
 - React
+- Styled-components
+- create-react-app
+- React Hooks (custom hooks)
     
 ## Getting Started with Create React App
 
