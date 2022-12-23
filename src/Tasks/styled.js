@@ -26,7 +26,6 @@ export const ItemContent = styled.span`
 
   ${({ done }) => done && css`
     text-decoration: line-through;
-  
   `}
 `;
 
