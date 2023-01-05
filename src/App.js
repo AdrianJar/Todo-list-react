@@ -1,12 +1,12 @@
-import Form from "./Form";
-import Tasks from "./Tasks";
-import Buttons from "./Buttons"
-import Section from "./Section"
-import Header from "./Header"
-import Footer from "./Footer"
-import Container from "./Container"
+import Form from "../src/features/tasks/Form";
+import Tasks from "../src/features/tasks/Tasks"
+import Buttons from "../src/features/tasks/Buttons"
+import Section from "../src/common/Section"
+import Header from "../src/common/Header"
+import Footer from "../src/common/Footer"
+import Container from "../src/common/Container"
 import { useState } from "react";
-import { useTasks } from "./useTasks";
+import { useTasks } from "./features/tasks/useTasks";
 
 function App() {
 
