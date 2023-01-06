@@ -20,7 +20,6 @@ function Tasks() {
   const { tasks } = useSelector(selectTasks)
 
   const [
-    // tasks,
     removeTask,
     toggleTaskDone,
     setAllDone,
