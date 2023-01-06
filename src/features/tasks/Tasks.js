@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import Form from "./Form";
 import TasksList from "./TasksList"
 import Buttons from "./Buttons"
@@ -5,8 +7,8 @@ import Section from "../../common/Section"
 import Header from "../../common/Header"
 import Footer from "../../common/Footer"
 import Container from "../../common/Container"
-import { useState } from "react";
 import { useTasks } from "./useTasks";
+import { selectTasks } from "./tasksSlice";
 
 function Tasks() {
 
@@ -15,8 +17,10 @@ function Tasks() {
     setHideDone(hideDone => !hideDone);
   };
 
+  const { tasks } = useSelector(selectTasks)
+
   const [
-    tasks,
+    // tasks,
     removeTask,
     toggleTaskDone,
     setAllDone,
