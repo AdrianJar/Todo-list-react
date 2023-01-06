@@ -3,7 +3,7 @@ import { SectionDiv, Header } from "./styled";
 const Section = ({ title, extraHeaderContent, body }) => (
     <SectionDiv>
         <Header
-            display
+            show
         >
             <h2>{title}</h2>
             {extraHeaderContent}

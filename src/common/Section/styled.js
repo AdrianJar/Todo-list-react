@@ -13,7 +13,7 @@ export const Header = styled.header`
     margin: 0;
     border-bottom: 2px solid ${({ theme }) => theme.color.gallery};
 
-    ${({ display }) => display && css`
+    ${({ show }) => show && css`
         display: grid;
         grid-template-columns: 1fr auto auto;
         grid-gap: 20px;
