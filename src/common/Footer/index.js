@@ -1,6 +1,6 @@
 import { StyledFooter } from "./styled";
 
-const Footer = ({title}) => (
+const Footer = ({ title }) => (
     <StyledFooter>{title}</StyledFooter>
 )
 
