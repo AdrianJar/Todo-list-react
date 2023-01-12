@@ -4,8 +4,7 @@ import { useDispatch } from "react-redux";
 import { addTask } from "../tasksSlice";
 import { FormDiv, Input, Button } from "./styled";
 
-const Form = ({ addNewTask }) => {
-
+const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
 
     const dispatch = useDispatch();
@@ -13,17 +12,17 @@ const Form = ({ addNewTask }) => {
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const trimedNewTask = newTaskContent.trim()
+        const trimedNewTaskContent = newTaskContent.trim()
 
-        if (trimedNewTask() !== "")
-            dispatch(addTask({
-                content: trimedNewTask,
-                done: false,
-                id: nanoid(),
-            }))
+        if (!trimedNewTaskContent) {
+            return;
+        }
+        dispatch(addTask({
+            content: trimedNewTaskContent,
+            done: false,
+            id: nanoid(),
+        }))
 
-
-        addNewTask();
         setNewTaskContent("");
     };
 
