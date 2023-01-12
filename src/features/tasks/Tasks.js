@@ -6,11 +6,11 @@ import Section from "../../common/Section"
 import Header from "../../common/Header"
 import Footer from "../../common/Footer"
 import Container from "../../common/Container"
-import { selectTasks } from "./tasksSlice";
+import { selectTasksState } from "./tasksSlice";
 
 function Tasks() {
 
-  const { tasks } = useSelector(selectTasks)
+  const { tasks } = useSelector(selectTasksState)
 
   return (
     <Container>
