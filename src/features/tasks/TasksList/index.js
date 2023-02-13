@@ -11,21 +11,17 @@ const TaskList = () => {
         <List>
             {tasks.map(task => (
                 <Items key={task.id}
-                    hidden={task.done && hideDone}
-                >
+                    hidden={task.done && hideDone}>
                     <Button
-                        onClick={() => dispatch(toggleTaskDone(task.id))}
-                    >
+                        onClick={() => dispatch(toggleTaskDone(task.id))}>
                         {task.done ? "✔️" : ""}
                     </Button>
                     <ItemContent done={task.done} >
                         {task.content}
                     </ItemContent>
-
                     <Button
                         remove
-                        onClick={() => dispatch(removeTask(task.id))}
-                    >
+                        onClick={() => dispatch(removeTask(task.id))}>
                         🗑
                     </Button>
                 </Items>
