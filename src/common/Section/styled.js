@@ -16,7 +16,6 @@ export const Header = styled.header`
     ${({ show }) => show && css`
         display: grid;
         grid-template-columns: 1fr auto auto;
-        grid-gap: 20px;
 
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             display: flex;
