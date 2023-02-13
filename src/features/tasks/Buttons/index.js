@@ -14,7 +14,6 @@ const Buttons = () => {
 
     return (
 
-
         <StyledDiv>
             <StyledButton onClick={() => dispatch(fetchExampleTasks())}>
                 Pobierz przykładowe zadania
