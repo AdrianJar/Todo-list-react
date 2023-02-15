@@ -6,6 +6,7 @@ import Header from "../../../common/Header"
 import Footer from "../../../common/Footer"
 import Container from "../../../common/Container"
 import Search from "./Search";
+import ExampleTasks from "./ExampleTasks";
 
 function TasksPage() {
 
@@ -16,9 +17,8 @@ function TasksPage() {
       />
       <Section
         title="Dodaj nowe zadanie"
-        body={
-          <Form />
-        }
+        extraHeaderContent={<ExampleTasks />}
+        body={<Form />}
       />
       <Section
         title="Wyszukiwarka"
@@ -26,12 +26,8 @@ function TasksPage() {
       />
       <Section
         title="Lista zadań"
-        extraHeaderContent={
-          <Buttons />
-        }
-        body={
-          <TasksList />
-        }
+        extraHeaderContent={<Buttons />}
+        body={<TasksList />}
       />
       <Footer
         title="Made by: Adrian Jaroszuk 2022"
