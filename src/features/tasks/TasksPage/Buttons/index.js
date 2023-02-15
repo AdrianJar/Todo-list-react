@@ -1,10 +1,9 @@
-import { StyledDiv, StyledButton } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
+import { Button, StyledDiv } from "../../../../common/Button/styled";
 import {
     selectTasksState,
     setAllDone,
     toggleHideDone,
-    fetchExampleTasks
 } from "../../tasksSlice";
 
 const Buttons = () => {
@@ -15,22 +14,19 @@ const Buttons = () => {
     return (
 
         <StyledDiv>
-            <StyledButton onClick={() => dispatch(fetchExampleTasks())}>
-                Pobierz przykładowe zadania
-            </StyledButton>
             {areTasksEmpty && (
                 <>
-                    <StyledButton
+                    <Button
                         onClick={() => dispatch(toggleHideDone())}
                     >
                         {hideDone ? "Pokaż " : "Ukryj "}ukończone
-                    </StyledButton>
-                    <StyledButton
+                    </Button>
+                    <Button
                         onClick={() => dispatch(setAllDone())}
                         disabled={tasks.every(({ done }) => done)}
                     >
                         Ukończ wszystkie
-                    </StyledButton>
+                    </Button>
                 </>
             )}
         </StyledDiv>

@@ -11,7 +11,7 @@ export const StyledDiv = styled.div`
     }
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
     border: none;
     padding: 15px;
     background-color: ${({ theme }) => theme.color.white};
