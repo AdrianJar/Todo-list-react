@@ -1,19 +1,21 @@
-import { useSelector } from "react-redux";
 import Form from "./Form";
 import TasksList from "./TasksList"
 import Buttons from "./Buttons"
-import Section from "../../common/Section"
-import Header from "../../common/Header"
-import Footer from "../../common/Footer"
-import Container from "../../common/Container"
-import { selectTasksState } from "./tasksSlice";
+import Section from "../../../common/Section"
+import Header from "../../../common/Header"
+import Footer from "../../../common/Footer"
+import Container from "../../../common/Container"
+import { useLocation } from "react-router-dom";
 
-function Tasks() {
+function TasksPage() {
 
-  const { tasks } = useSelector(selectTasksState)
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  searchParams.get("szukaj");
 
   return (
     <Container>
+      {location.search}
       <Header
         title="Lista zadań"
       />
@@ -26,14 +28,10 @@ function Tasks() {
       <Section
         title="Lista zadań"
         extraHeaderContent={
-          <Buttons
-            tasks={tasks}
-          />
+          <Buttons />
         }
         body={
-          <TasksList
-            tasks={tasks}
-          />
+          <TasksList />
         }
       />
       <Footer
@@ -43,4 +41,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;
