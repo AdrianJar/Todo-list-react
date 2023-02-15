@@ -14,7 +14,5 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: ${({ theme }) => theme.color.gallery};
-  padding: 20px;
-  margin: 10px auto;
 }
 `;
