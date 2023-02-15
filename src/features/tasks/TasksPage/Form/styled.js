@@ -11,14 +11,6 @@ export const FormDiv = styled.form`
     }
 `;
 
-export const Input = styled.input`
-    padding: 10px;
-    border: 1px solid ${({ theme }) => theme.color.silver};
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        width: 100%;
-    }
-`;
 
 export const Button = styled.button`
     padding: 10px;
