@@ -1,11 +1,12 @@
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import Author from "./features/author/Author";
-import Tasks from "./features/tasks/Tasks";
+import { HashRouter, Link, Redirect, Route, Switch } from "react-router-dom";
+import AuthorPage from "./features/AuthorPage";
+import TasksPage from "./features/tasks/TasksPage";
+import TaskPage from "./features/tasks/TaskPage";
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav>
         <ul>
           <li>
@@ -16,15 +17,21 @@ function App() {
           </li>
         </ul>
         <Switch>
+          <Route path="/zadania/:id">
+            <TaskPage />
+          </Route>
           <Route path="/zadania">
-            <Tasks />
+            <TasksPage />
           </Route>
           <Route path="/author">
-            <Author />
+            <AuthorPage />
+          </Route>
+          <Route path="/">
+            <Redirect to="/zadania"></Redirect>
           </Route>
         </Switch>
       </nav>
-    </BrowserRouter>
+    </HashRouter>
   )
 };
 
