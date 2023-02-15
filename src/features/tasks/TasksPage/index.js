@@ -5,6 +5,7 @@ import Section from "../../../common/Section"
 import Header from "../../../common/Header"
 import Footer from "../../../common/Footer"
 import Container from "../../../common/Container"
+import Search from "./Search";
 
 function TasksPage() {
 
@@ -18,6 +19,10 @@ function TasksPage() {
         body={
           <Form />
         }
+      />
+      <Section
+        title="Wyszukiwarka"
+        body={<Search />}
       />
       <Section
         title="Lista zadań"
