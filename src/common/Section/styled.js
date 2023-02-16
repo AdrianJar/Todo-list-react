@@ -26,5 +26,5 @@ export const Header = styled.header`
 `;
 
 export const Div = styled.div`
-    padding: 0 20px;
+    padding: 20px;
 `;
