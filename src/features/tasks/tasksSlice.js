@@ -53,10 +53,7 @@ export const {
 } = tasksSlice.actions;
 export const selectTasksState = state => state.tasks;
 export const selectTasks = (state) => selectTasksState(state).tasks;
-
-export const selectLoading = (state) =>
-    selectTasksState(state).loading === "true";
-
+export const selectLoading = (state) => selectTasksState(state).loading;
 export const getTaskById = (state, taskId) =>
     selectTasks(state).find(({ id }) => id === taskId);
 
