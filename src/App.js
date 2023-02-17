@@ -1,8 +1,9 @@
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom"
-import NavList from "./common/NavList"
+import Navigation from "./Navigation"
 import AuthorPage from "./features/AuthorPage"
 import TaskPage from "./features/tasks/TaskPage"
 import TasksPage from "./features/tasks/TasksPage"
+import { toAuthor, toTask, toTasks } from "./routes"
 
 
 
@@ -12,19 +13,19 @@ function App() {
   return (
     <HashRouter>
     <nav>
-      <NavList />
+      <Navigation />
       <Switch>
-        <Route path="/zadania/:id">
+        <Route path={toTask()}>
           <TaskPage />
         </Route>
-        <Route path="/zadania">
+        <Route path={toTasks()}>
           <TasksPage />
         </Route>
-        <Route path="/author">
+        <Route path={toAuthor()}>
           <AuthorPage />
         </Route>
         <Route path="/">
-          <Redirect to="/zadania"></Redirect>
+          <Redirect to={toTasks()}></Redirect>
         </Route>
       </Switch>
     </nav>
