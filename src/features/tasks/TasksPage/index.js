@@ -30,7 +30,7 @@ function TasksPage() {
         body={<TasksList />}
       />
       <Footer
-        title="Made by: Adrian Jaroszuk 2022"
+        title="Made by: Adrian Jaroszuk 2023"
       />
     </Container>
   );
