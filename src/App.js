@@ -5,9 +5,6 @@ import TaskPage from "./features/tasks/TaskPage"
 import TasksPage from "./features/tasks/TasksPage"
 import { toAuthor, toTask, toTasks } from "./routes"
 
-
-
-
 function App() {
 
   return (
