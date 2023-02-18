@@ -6,9 +6,9 @@ This is a *To Do List* project.
 ## 📑 Table of contents:
 
 1. [🎮 Demo](#demo)
-1. [📖 Description](#description)
-2. [👀 Preview](#preview)
-3. [🛠 Technologies](#technologies)
+2. [📖 Description](#description)
+3. [👀 Preview](#preview)
+4. [🛠 Technologies](#technologies)
 
 ## 🎮Demo
 
@@ -18,10 +18,14 @@ You can find a demo version of this project [link here](https://adrianjar.github
 
 Hello everyone, I’d like to show you my "To do list" application.
 
-So „To do list" is a web application which allows you to write down any tasks which are necessary (more or less), important (more or less)etc. This list can remind you what you had to do and after all you can simply mark them done or press one button to remove it from list. After update there are 2 more buttons which appear after task list has at least 1 task. First button marks all tasks done and second one hides done tasks.
+So „To do list" is a web application which allows you to write down any tasks which are necessary (more or less), important (more or less)etc. This list can remind you what you had to do and after all you can simply mark them done or press one button to remove it from list. After update there are 2 more buttons which appear after task list has at least 1 task. First button marks all tasks done and second one hides done tasks. After another update there is added navigation with 2 sites: Tasks and About author. Another change is that there is now 3rd button which allows you to fetch example tasks to tasklist. While tasks are being fetched text is changed and disabled to "Ładowanie..." so that you can see that there is something going on.
 
-My web applications contains of 4 buttons which are responsible for:
+My web applications contains of 8 buttons which are responsible for:
 
+- "Zadania" it main site for " To do List".
+- "O autorze" it's page about author. Small introduction nothing special.
+- "Pobierz przykładowe zadnia" this button if fetching example tasks to task list.
+- "Dodaj zadanie" is responsible for addint task which you want to add.
 - ✅ button is responsible for marking tasks you’ve done by adding special text styles.
 - 🗑️ button on red background is responsible for deleting tasks wether it was finished or you don’t want it to be there.
 - "Ukryj ukończone" hides all tasks which are marked done.
@@ -30,8 +34,13 @@ This web APP is a part of my Frontend Dev course in which I participate.
 
 
 ## 👀Preview 
+1.  Navigation
 
-![Preview](https://github.com/AdrianJar/ToDoList_V2/blob/master/images/Preview.gif)
+![Navigation](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/1_Navigation.gif)
+
+2.  AddTasks
+
+![AddTasks](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/2_AddTasks.gif)
 
 ## 🛠Technologies
 
