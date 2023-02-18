@@ -47,6 +47,11 @@ This web APP is a part of my Frontend Dev course in which I participate.
 - Styled-components
 - create-react-app
 - React Hooks (custom hooks)
+- React Redux
+- React Redux-Toolkit
+- React Redux-Saga
+- React Router 
+
     
 ## Getting Started with Create React App
 
