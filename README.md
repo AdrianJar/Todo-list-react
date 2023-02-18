@@ -34,13 +34,30 @@ This web APP is a part of my Frontend Dev course in which I participate.
 
 
 ## 👀Preview 
-1.  Navigation
 
+1.  Navigation
 ![Navigation](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/1_Navigation.gif)
 
-2.  AddTasks
-
+2.  Add tasks
 ![AddTasks](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/2_AddTasks.gif)
+
+3.  Mark done tasks
+![MarkDone](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/3_MarkDone.gif)
+
+4.  Hide done tasks
+![HideDone](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/4_HideDone.gif)
+
+5.  Remove tasks
+![RemoveTasks](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/5_RemoveTasks.gif)
+
+6.  Fetch example tasks
+![FetchExampleTasks](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/6_FetchExampleTasks.gif)
+
+7.  Search and details of tasks
+![SearchAndDetails](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/7_SearchAndDetails.gif)
+
+8.  Tasks not found
+![TasksNotFound](https://github.com/AdrianJar/todo_list_react_v2/blob/master/preview/Preview_v2/8_TaskNotFound.gif)
 
 ## 🛠Technologies
 
