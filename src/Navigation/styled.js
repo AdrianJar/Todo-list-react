@@ -23,5 +23,9 @@ export const StyledNavLink = styled(NavLink)`
     &.active{
         filter:brightness(120%);
         font-weight: bold;
-}
+    }
+
+    &:hover{
+        border-bottom: 1px solid;
+    }
 `;
