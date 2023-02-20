@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const SectionDiv = styled.section`
     max-width: 750px;
@@ -12,17 +12,15 @@ export const Header = styled.header`
     padding-left: 20px;
     margin: 0;
     border-bottom: 2px solid ${({ theme }) => theme.color.gallery};
+    display: grid;
+    grid-template-columns: 1fr auto auto;
 
-    ${({ show }) => show && css`
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-
-        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-    `}
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
 `;
 
 export const Div = styled.div`
