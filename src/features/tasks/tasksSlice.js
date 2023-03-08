@@ -51,6 +51,7 @@ export const {
     fetchExampleTasksSuccess,
     fetchExampleTasksError,
 } = tasksSlice.actions;
+
 export const selectTasksState = state => state.tasks;
 export const selectTasks = (state) => selectTasksState(state).tasks;
 export const selectLoading = (state) => selectTasksState(state).loading;
